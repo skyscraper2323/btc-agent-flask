@@ -1,0 +1,11 @@
+{
+  "build": {
+    "env": {
+      "PYTHONUNBUFFERED": "1"
+    }
+  },
+  "deploy": {
+    "startCommand": "gunicorn app:app",
+    "restartPolicyType": "ON_FAILURE"
+  }
+}
